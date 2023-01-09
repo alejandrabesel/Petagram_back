@@ -12,5 +12,14 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
     },
+    age: {
+      type: DataTypes.INTEGER
+    },
+    image: {
+      type: DataTypes.STRING
+    },
+    looking_partner: {
+      type: DataTypes.BOOLEAN
+  }
   });
 };

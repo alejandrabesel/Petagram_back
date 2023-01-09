@@ -3,17 +3,29 @@ const { DataTypes } = require('sequelize');
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
   // defino el modelo
-  sequelize.define('user', {
+  sequelize.define('post', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    date: {
+      type: DataTypes.DATE
+    },
+    reactions: {
+      type: DataTypes.ENUM('Funny', 'Like', 'Dislike')
+    },
+    description: {
       type: DataTypes.STRING
     },
-    email: {
+    image: {
       type: DataTypes.STRING
-   }
+    },
+    title: {
+      type: DataTypes.STRING
+    },
+    state: {
+      type: DataTypes.BOOLEAN
+  }
   });
 };
