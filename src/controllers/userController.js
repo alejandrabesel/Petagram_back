@@ -1,24 +1,22 @@
-const {User} = require('../db')
+const { User } = require("../db");
 
-const createUser = async(req, res) =>{
+const createUser = async (req, res) => {
   try {
     const { name, email } = req.body;
-    console.log(name);
     const newUser = await User.create({
       name,
       email,
     });
-    console.log(newUser);
     res.json(newUser);
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
-}
+};
 
-const getAllUser = async(req,res) => {
-
-}
+const getAllUser = async (req, res) => {
+  res.status(200).json(await User.findAll());
+};
 module.exports = {
-    createUser,
-    getAllUser
-}
+  createUser,
+  getAllUser,
+};
