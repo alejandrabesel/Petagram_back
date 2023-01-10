@@ -16,7 +16,12 @@ const createUser = async(req, res) =>{
 }
 
 const getAllUser = async(req,res) => {
-
+  try {
+    const allUsers = await User.findAll();
+    res.json(allUsers);
+  } catch (error) {
+    return res.status(400).json({ message: error.message });
+} 
 }
 module.exports = {
     createUser,
