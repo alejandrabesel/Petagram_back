@@ -13,7 +13,10 @@ module.exports = (sequelize) => {
       type: DataTypes.DATE
     },
     reactions: {
-      type: DataTypes.ENUM('Funny', 'Like', 'Dislike')
+      type: DataTypes.ARRAY(DataTypes.STRING)
+    },
+    comments: {
+      type: DataTypes.ARRAY(DataTypes.STRING)
     },
     description: {
       type: DataTypes.STRING
