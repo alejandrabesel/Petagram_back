@@ -13,7 +13,7 @@ const router = Router();
 //Routes
 router.get("/", getAllPosts);
 router.get("/:petId", getPostsByPetId);
-router.post("/", addPost);
+router.post("/:petId", addPost);
 router.put("/reaction/:id", addReactions);
 router.put("/comment/:id", addComment);
 router.put("/:id", updatePost);

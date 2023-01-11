@@ -22,7 +22,8 @@ const getPostsByPetId = async(req,res) => {
 
 const addPost = async(req, res) => {
   try {
-    const { date, reactions, comments, description, image, title, state, petId } = req.body;
+    const { date, reactions, comments, description, image, title, state } = req.body;
+    const { petId } = req.params;
     const newPost = await Post.create({
       date,
       reactions : [reactions],
@@ -34,7 +35,7 @@ const addPost = async(req, res) => {
     });
 
     const pet = await Pet.findByPk(petId);
-    newPost.setPet(pet);
+    await newPost.setPet(pet);
 
     res.json(newPost);
   } catch (error) {
