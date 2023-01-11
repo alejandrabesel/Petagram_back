@@ -22,7 +22,8 @@ const getAddressByUserId = async(req,res) => {
 
 const addAddress = async(req, res) => {
   try {
-    const { country, province, locality, street, number, userId } = req.body;
+    const { country, province, locality, street, number } = req.body;
+    const { userId } = req.params;
     const newAddress = await Address.create({
         country,
         province,
@@ -32,7 +33,7 @@ const addAddress = async(req, res) => {
     });
 
     const user = await User.findByPk(userId);
-    newAddress.setUser(user);
+    await newAddress.setUser(user);
 
     res.json(newAddress);
   } catch (error) {
