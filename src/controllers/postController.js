@@ -1,4 +1,4 @@
-const {Post} = require('../db.js')
+const {Post, Pet} = require('../db.js')
 
 
 const getAllPosts = async(req,res) => {
@@ -23,7 +23,7 @@ const getPostsByPetId = async(req,res) => {
 
 const addPost = async(req, res) => {
   try {
-    const { date, reactions, comments, description, image, title, state } = req.body;
+    const { date, reactions, comments, description, image, title, state, petId } = req.body;
     const newPost = await Post.create({
       date,
       reactions : [reactions],
@@ -33,7 +33,10 @@ const addPost = async(req, res) => {
       title,
       state
     });
-    console.log(newPost);
+
+    const pet = await Pet.findByPk(petId);
+    newPost.setPet(pet);
+
     res.json(newPost);
   } catch (error) {
     return res.status(400).json({ message: error.message });
@@ -89,7 +92,6 @@ const addComment = async(req,res) => {
 //          return res.status(400).json({ message: error.message });
 //      }
 // }
-
 
 
 const updatePost = async(req,res) => {
