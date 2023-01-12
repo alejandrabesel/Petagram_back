@@ -8,7 +8,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/beagle/n02088364_15036.jpg",
       looking_partner: false,
       raceId: 1,
-      userId: 1
+      userId: 1,
+      gender: "male"
     },
     {
       name: "Peras",
@@ -16,7 +17,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/boxer/n02108089_1626.jpg",
       looking_partner: false,
       raceId: 2,
-      userId: 1
+      userId: 1,
+      gender: "male"
     },
     {
       name: "Ditache",
@@ -24,7 +26,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/chow/n02112137_10762.jpg",
       looking_partner: false,
       raceId: 3,
-      userId: 1
+      userId: 1,
+      gender: "male"
     },
     {
       name: "Asky",
@@ -32,7 +35,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/cockapoo/Guri5.jpg",
       looking_partner: false,
       raceId: 4,
-      userId: 2
+      userId: 2,
+      gender: "male"
     },
     {
       name: "Alta",
@@ -40,7 +44,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/dalmatian/cooper1.jpg",
       looking_partner: false,
       raceId: 5,
-      userId: 2
+      userId: 2,
+      gender: "female"
     },
     {
       name: "Neigiry",
@@ -48,7 +53,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/doberman/n02107142_34.jpg",
       looking_partner: false,
       raceId: 6,
-      userId: 3
+      userId: 3,
+      gender: "female"
     },
     {
       name: "Paty",
@@ -56,7 +62,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/husky/n02110185_11409.jpg",
       looking_partner: false,
       raceId: 7,
-      userId: 4
+      userId: 4,
+      gender: "female"
     },
     {
       name: "Sloter",
@@ -64,7 +71,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/maltese/n02085936_2422.jpg",
       looking_partner: false,
       raceId: 8,
-      userId: 5
+      userId: 5,
+      gender: "female"
     },
     {
       name: "Pavi",
@@ -72,7 +80,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/mastiff-bull/n02108422_2111.jpg",
       looking_partner: false,
       raceId: 9,
-      userId: 5
+      userId: 5,
+      gender: "female"
     },
     {
       name: "Rue",
@@ -80,7 +89,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/papillon/n02086910_3991.jpg",
       looking_partner: false,
       raceId: 10,
-      userId: 6
+      userId: 6,
+      gender: "female"
     },
     {
       name: "Noden",
@@ -88,7 +98,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/pitbull/pitbull_dog.jpg",
       looking_partner: false,
       raceId: 11,
-      userId: 6
+      userId: 6,
+      gender: "male"
     },
     {
       name: "Enchau",
@@ -96,7 +107,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/pomeranian/n02112018_5860.jpg",
       looking_partner: false,
       raceId: 12,
-      userId: 7
+      userId: 7,
+      gender: "male"
     },
     {
       name: "Mebo",
@@ -104,7 +116,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/pug/n02110958_14563.jpg",
       looking_partner: false,
       raceId: 13,
-      userId: 7
+      userId: 7,
+      gender: "male"
     },
     {
       name: "Moram",
@@ -112,7 +125,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/rottweiler/n02106550_2082.jpg",
       looking_partner: false,
       raceId: 14,
-      userId: 8
+      userId: 8,
+      gender: "male"
     },
     {
       name: "Luca",
@@ -120,7 +134,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/sharpei/noel.jpg",
       looking_partner: false,
       raceId: 15,
-      userId: 9
+      userId: 9,
+      gender: "male"
     },
     {
       name: "Suly",
@@ -128,7 +143,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/beagle/n02088364_17534.jpg",
       looking_partner: false,
       raceId: 1,
-      userId: 9
+      userId: 9,
+      gender: "male"
     },
     {
       name: "Coper",
@@ -136,7 +152,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/boxer/n02108089_2482.jpg",
       looking_partner: false,
       raceId: 2,
-      userId: 9
+      userId: 9,
+      gender: "male"
     },
     {
       name: "Naar",
@@ -144,7 +161,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/chow/n02112137_5742.jpg",
       looking_partner: false,
       raceId: 3,
-      userId: 10
+      userId: 10,
+      gender: "female"
     },
     {
       name: "Kabo",
@@ -152,7 +170,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/cockapoo/george-close-up.jpg",
       looking_partner: false,
       raceId: 4,
-      userId: 11
+      userId: 11,
+      gender: "female"
     },
     {
       name: "Habin",
@@ -160,7 +179,8 @@ const seedPets = async() => {
       image: "https://images.dog.ceo/breeds/dalmatian/cooper2.jpg",
       looking_partner: false,
       raceId: 5,
-      userId: 12
+      userId: 12,
+      gender: "female"
     },
     {
       name: "Sumag",
@@ -168,7 +188,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/xnzzM6MBI.jpg",
       looking_partner: false,
       raceId: 16,
-      userId: 13
+      userId: 13,
+      gender: "female"
     },
     {
       name: "Facuit",
@@ -176,7 +197,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg",
       looking_partner: false,
       raceId: 17,
-      userId: 13
+      userId: 13,
+      gender: "female"
     },
     {
       name: "Ruses",
@@ -184,7 +206,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/d55E_KMKZ.jpg",
       looking_partner: false,
       raceId: 18,
-      userId: 14
+      userId: 14,
+      gender: "female"
     },
     {
       name: "Tao",
@@ -192,7 +215,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/TBA3JzB9P.jpg",
       looking_partner: false,
       raceId: 19,
-      userId: 14
+      userId: 14,
+      gender: "female"
     },
     {
       name: "Abdor",
@@ -200,7 +224,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/SCHe-SekW.jpg",
       looking_partner: false,
       raceId: 20,
-      userId: 15
+      userId: 15,
+      gender: "female"
     },
     {
       name: "Fuske",
@@ -208,7 +233,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/bTo6m3PVg.jpg",
       looking_partner: false,
       raceId: 21,
-      userId: 15
+      userId: 15,
+      gender: "female"
     },
     {
       name: "Vicoo",
@@ -216,7 +242,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/z_k-oJ8xG.jpg",
       looking_partner: false,
       raceId: 22,
-      userId: 15
+      userId: 15,
+      gender: "female"
     },
     {
       name: "Tao",
@@ -224,7 +251,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/_6x-3TiCA.jpg",
       looking_partner: false,
       raceId: 23,
-      userId: 15
+      userId: 15,
+      gender: "female"
     },
     {
       name: "Kowat",
@@ -232,7 +260,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/DBmIBhhyv.jpg",
       looking_partner: false,
       raceId: 24,
-      userId: 16
+      userId: 16,
+      gender: "female"
     },
     {
       name: "Nene",
@@ -240,7 +269,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/s42I_BL-a.jpg",
       looking_partner: false,
       raceId: 25,
-      userId: 16
+      userId: 16,
+      gender: "female"
     },
     {
       name: "Nula",
@@ -248,7 +278,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/J2PmlIizw.jpg",
       looking_partner: false,
       raceId: 26,
-      userId: 17
+      userId: 17,
+      gender: "female"
     },
     {
       name: "Fade",
@@ -256,7 +287,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/OhTkBTPnD.jpg",
       looking_partner: false,
       raceId: 27,
-      userId: 17
+      userId: 17,
+      gender: "female"
     },
     {
       name: "Naslo",
@@ -264,7 +296,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/BkksyH95Z.jpg",
       looking_partner: false,
       raceId: 28,
-      userId: 18
+      userId: 18,
+      gender: "female"
     },
     {
       name: "Lasney",
@@ -272,7 +305,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/7isAO4Cav.jpg",
       looking_partner: false,
       raceId: 29,
-      userId: 19
+      userId: 19,
+      gender: "male"
     },
     {
       name: "Bisne",
@@ -280,7 +314,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/xNuSF5YWY.jpg",
       looking_partner: false,
       raceId: 30,
-      userId: 20
+      userId: 20,
+      gender: "male"
     },
     {
       name: "Yogotte",
@@ -288,7 +323,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/N-94oSJ5T.jpg",
       looking_partner: false,
       raceId: 16,
-      userId: 20
+      userId: 20,
+      gender: "male"
     },
     {
       name: "Pono",
@@ -296,7 +332,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/h19-vtIeX.jpg",
       looking_partner: false,
       raceId: 17,
-      userId: 21
+      userId: 21,
+      gender: "male"
     },
     {
       name: "Torno",
@@ -304,7 +341,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/8r4M61iyS.jpg",
       looking_partner: false,
       raceId: 18,
-      userId: 21
+      userId: 21,
+      gender: "male"
     },
     {
       name: "Cata",
@@ -312,7 +350,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/zeKI28A21.jpg",
       looking_partner: false,
       raceId: 19,
-      userId: 21
+      userId: 21,
+      gender: "male"
     },
     {
       name: "Todu",
@@ -320,7 +359,8 @@ const seedPets = async() => {
       image: "https://cdn2.thecatapi.com/images/8NdgktL3E.jpg",
       looking_partner: false,
       raceId: 20,
-      userId: 22
+      userId: 22,
+      gender: "male"
     },
     
   ])
