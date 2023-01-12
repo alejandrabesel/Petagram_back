@@ -20,6 +20,9 @@ module.exports = (sequelize) => {
     },
     looking_partner: {
       type: DataTypes.BOOLEAN
-  }
+    },
+    gender: {
+      type: DataTypes.STRING
+    }
   });
 };
