@@ -57,13 +57,14 @@ const getLookingForPartner = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const { name, age, image, looking_partner, userId, raceId } = req.body;
+    const { name, age, image, looking_partner, gender, userId, raceId } = req.body;
 
     const newPet = await Pet.create({
       name: name.toLowerCase(),
       age,
       image,
       looking_partner,
+      gender
     });
 
     const user = await User.findByPk(userId);
@@ -76,9 +77,9 @@ const create = async (req, res) => {
 };
 
 const update = async (req, res) => {
-  const { name, age, image, looking_partner, userId, raceId } = req.body;
+  const { name, age, image, looking_partner, gender, userId, raceId } = req.body;
   const pet = await Pet.findByPk(req.params.id);
-  await pet.update({ name, age, image, looking_partner });
+  await pet.update({ name, age, image, looking_partner, gender });
 
   await pet.save();
 
