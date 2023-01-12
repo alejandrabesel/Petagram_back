@@ -1,6 +1,21 @@
-const {User} = require('../db')
+const { User } = require("../db");
 
-const createUser = async(req, res) =>{
+const findOrCreateUser = async (req, res) => {
+  const { name, email } = req.body;
+  try {
+    const [user, created] = await User.findOrCreate({
+      where: { email: email },
+      defaults: {
+        name,
+        email,
+      },
+    });
+    res.send(user);
+  } catch (e) {
+    res.send(e.message);
+  }
+};
+const createUser = async (req, res) => {
   try {
     const { name, email } = req.body;
     const newUser = await User.create({
@@ -11,51 +26,51 @@ const createUser = async(req, res) =>{
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
-}
-
-const getAllUser = async(req,res) => {
-  try{
-    const allUser = await User.findAll()
-    res.status(200).json(allUser)
-  } catch{
+};
+const getAllUser = async (req, res) => {
+  try {
+    const allUser = await User.findAll();
+    res.status(200).json(allUser);
+  } catch {
     return res.status(500).json({ message: error.message });
   }
-}
+};
 
-const getUser = async(req,res) => {
-  try{
-    const {id} = req.params
-    const user = await User.findOne({where: {id:id}})
-    res.status(200).send(user)
-  } catch{
+const getUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const user = await User.findOne({ where: { id: id } });
+    res.status(200).send(user);
+  } catch {
     return res.status(500).json({ message: error.message });
   }
-}
+};
 
-const updateUser = async(req,res) => {
-  try{
-    const {id} = req.params
-    const {name, email} = req.body
-    await User.update({name:name, email:email}, {where:{id:id}})
-    res.status(200).send("user update")
-  } catch{
+const updateUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name, email } = req.body;
+    await User.update({ name: name, email: email }, { where: { id: id } });
+    res.status(200).send("user update");
+  } catch {
     return res.status(500).json({ message: error.message });
   }
-}
+};
 
-const deleteUser = async(req,res) => {
-  try{
-    const {id} = req.params
-    await User.destroy({where: {id:id}})
-    res.status(200).send("user delete")
-  } catch{
+const deleteUser = async (req, res) => {
+  try {
+    const { id } = req.params;
+    await User.destroy({ where: { id: id } });
+    res.status(200).send("user delete");
+  } catch {
     return res.status(500).json({ message: error.message });
   }
-}
+};
 module.exports = {
-    createUser,
-    getAllUser,
-    getUser,
-    updateUser,
-    deleteUser
-}
+  createUser,
+  getAllUser,
+  getUser,
+  updateUser,
+  deleteUser,
+  findOrCreateUser,
+};
