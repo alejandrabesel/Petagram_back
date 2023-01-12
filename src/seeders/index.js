@@ -5,7 +5,7 @@ const seedSpecies = require('./demo-specie')
 const seedAdmin = require('./demo-admin')
 
 const seedAll = async() => {
-    seedAdmin()
+    //seedAdmin()
     seedSpecies()
     seedRaces()
     seedUsers()
