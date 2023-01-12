@@ -21,8 +21,8 @@ module.exports = (sequelize) => {
     looking_partner: {
       type: DataTypes.BOOLEAN
     },
-    gender:{
-      type: DataTypes.INTEGER
+    gender: {
+      type: DataTypes.STRING
     }
   });
 };
